@@ -1,0 +1,111 @@
+{
+  "name": "resume-page",
+  "version": "0.1.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "copy:readme": "copyfiles ./README.md ./projects/resume-page",
+    "build": "npm run build:demo",
+    "build:demo": "ng build resumePage --base-href='https://vanishdark.github.io/resumePage/'",
+    "format:check": "prettier --list-different 'projects/**/*.ts'",
+    "format:write": "prettier --write 'projects/**/*.ts'",
+    "format-package-json": "npm-run-all format-package-json:*",
+    "format-package-json:main": "prettier --write 'package.json'",
+    "test": "ng test",
+    "report-coverage:lib": "cat ./coverage/resumePage/lcov.info | codecov",
+    "publish:demo": "npx angular-cli-ghpages --dir=./dist/resumePage",
+    "adjust-version": "npm-run-all adjust-version:*",
+    "adjust-version:main": "rjp package.json version $VERSION",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "semantic-release": "semantic-release"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^8.2.3",
+    "@angular/cdk": "^8.1.4",
+    "@angular/common": "^8.2.3",
+    "@angular/compiler": "^8.2.3",
+    "@angular/compiler-cli": "^8.2.3",
+    "@angular/core": "^8.2.3",
+    "@angular/forms": "^8.2.3",
+    "@angular/http": "^7.2.15",
+    "@angular/platform-browser": "^8.2.3",
+    "@angular/platform-browser-dynamic": "^8.2.3",
+    "@angular/router": "^8.2.3",
+    "bootstrap": "^4.3.1",
+    "core-js": "^3.2.1",
+    "jquery": "^3.4.1",
+    "npm-check-updates": "^3.1.21",
+    "popper.js": "^1.15.0",
+    "rxjs": "~6.5.2",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.803.0",
+    "@angular-devkit/build-ng-packagr": "^0.803.0",
+    "@angular/cli": "^8.3.0",
+    "@angular/language-service": "^8.2.3",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@commitlint/prompt": "^8.1.0",
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/commit-analyzer": "^6.3.0",
+    "@semantic-release/exec": "^3.3.6",
+    "@semantic-release/git": "^7.0.16",
+    "@semantic-release/github": "^5.4.3",
+    "@semantic-release/npm": "^5.1.15",
+    "@semantic-release/release-notes-generator": "^7.3.0",
+    "@types/jasmine": "^3.4.0",
+    "@types/jasminewd2": "^2.0.6",
+    "@types/node": "~12.7.2",
+    "bootstrap": "^4.3.1",
+    "codecov": "^3.5.0",
+    "codelyzer": "~5.1.0",
+    "copyfiles": "^2.1.1",
+    "husky": "^3.0.4",
+    "jasmine-core": "~3.4.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "jquery": "^3.4.1",
+    "karma": "~4.2.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~2.1.0",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.2",
+    "lint-staged": "^9.2.4",
+    "ng-packagr": "^5.5.0",
+    "npm-run-all": "^4.1.5",
+    "popper.js": "^1.15.0",
+    "prettier": "^1.18.2",
+    "protractor": "~5.4.2",
+    "puppeteer": "^1.19.0",
+    "replace-json-property": "^1.4.1",
+    "semantic-release": "^15.13.24",
+    "ts-node": "~8.3.0",
+    "tsickle": "0.37.0",
+    "tslib": "^1.10.0",
+    "tslint": "~5.19.0",
+    "typescript": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "projects/**/*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanishdark/resumePage.git"
+  }
+}
