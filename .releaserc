@@ -1,5 +1,5 @@
 {
-  "pkgRoot": "dist/ngx-animated-counter",
+  "pkgRoot": "dist/resumePage",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
