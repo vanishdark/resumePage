@@ -32,5 +32,5 @@ jobs:
         provider: pages
         skip_cleanup: true
         github_token: $GH_TOKEN
-        local_dir: dist/angularanimatedcounter
+        local_dir: dist/resumePage
       if: branch = master
