@@ -28,9 +28,15 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/@fortawesome/fontawesome-free/css/fontawesome.css",
+              "node_modules/@fortawesome/fontawesome-free/css/regular.css",
+              "node_modules/@fortawesome/fontawesome-free/css/solid.css",
+              "node_modules/@fortawesome/fontawesome-free/css/brands.css",
               "src/assets/scss/resumePage.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/wow.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
