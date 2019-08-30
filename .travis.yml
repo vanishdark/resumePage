@@ -28,6 +28,7 @@ jobs:
     - stage: build & publish showcase
       script:
         - npm run build:demo
+        - npm run publish:demo
       deploy:
         provider: pages
         skip_cleanup: true
