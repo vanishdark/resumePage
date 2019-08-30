@@ -1,0 +1,12 @@
+<div class="progress" [style.height]="height">
+  <div
+    class="progress-bar{{type ? ' bg-' + type : ''}}{{animated ? ' progress-bar-animated' : ''}}{{striped ? ' progress-bar-striped' : ''}}"
+    role="progressbar"
+    [style.width.%]="getPercentValue()"
+    [attr.aria-valuenow]="getValue()"
+    aria-valuemin="0"
+    [attr.aria-valuemax]="max">
+    <span class="progress-tooltip" [style.left.%]="getPercentValue()">{{getPercentValue()}} %</span>
+    <ng-content></ng-content>
+  </div>
+</div>

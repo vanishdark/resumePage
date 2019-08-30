@@ -20,10 +20,14 @@ $font-size: 20px;
 body, html {
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
   font-family: 'Amatic SC', cursive;
   background: whitesmoke;
 }
 
+.page-scroll {
+  scroll-behavior: smooth;
+}
 
 // UNDER CONSTRUCTION PAGE
 
@@ -202,7 +206,6 @@ body, html {
 .intro-home {
   background: url("../img/trianglify-lowres.png") no-repeat scroll 0 0;
   background-size: cover;
-  padding-top: 90px;
   padding-bottom: 120px;
   color: white;
   position: relative;
@@ -479,4 +482,82 @@ section {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF01C1FB', endColorstr='#FF1457F2', GradientType=1);
   color: #fff;
+}
+
+// SKILL'S
+.bg-grey {
+  background-color: #f6f6f7;
+}
+
+.bg-skill {
+  background-color: #ff7204;
+}
+
+.skill {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.skill .progress {
+  background: #D2D8E7;
+  position: relative;
+  overflow: inherit;
+  height: 6px;
+}
+
+.skill .progress-bar {
+  height: 6px;
+  width: 0;
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  background-image: -webkit-linear-gradient(left, #ff7204 0%, #F89006 100%);
+  background-image: -o-linear-gradient(left, #ff7204 0%, #F89006 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff7204), to(#F89006));
+  background-image: linear-gradient(to right, #ff7204 0%, #F89006 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1457F2', endColorstr='#FF01C1FB', GradientType=1);
+  border-radius: 50px;
+}
+
+.skill .progress-tooltip {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  color: #ff7204;
+  -webkit-transition: 1.5s ease-in-out;
+  -o-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+  font-size: 20px;
+  margin-left: -15px;
+}
+
+.skill-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #565758;
+  @media (max-width: 767px) {
+    .block-title {
+      font-size: 18px;
+    }
+  }
+}
+
+// FOOTER
+.site-footer {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.footer-title {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  background-image: -webkit-linear-gradient(left, #F89006 0%, #ff7204 100%);
+  background-image: -o-linear-gradient(left, #F89006 0%, #ff7204 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#F89006), to(#ff7204));
+  background-image: linear-gradient(to right, #F89006 0%, #ff7204 100%);
+  color: transparent;
+  -webkit-background-clip: text;
 }

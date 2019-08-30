@@ -1,20 +1,28 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-target="#navbarNavDropdown" data-toggle="collapse" type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
     <a [routerLink]="[homePage]" class="navbar-brand header-home-link">João Tomaz</a>
     <div class="collapse navbar-collapse justify-content-stretch" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a [routerLink]="[homePage]" [routerLinkActive]="['active']" class="nav-link nav-link-ltr">Home</a>
+          <a (click)="activeHome()"
+             class="nav-link nav-link-ltr page-scroll {{isHomeActive ? 'active' : ''}}"
+             href="public/home#top">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-ltr">About</a>
+          <a
+            (click)="activeAbout()"
+            class="nav-link nav-link-ltr page-scroll {{isAboutActive ? 'active' : ''}}"
+            href="public/home#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-ltr">Skills</a>
+          <a (click)="activeSkill()"
+             class="nav-link nav-link-ltr page-scroll {{isSkillActive ? 'active' : ''}}"
+             href="public/home#skills">Skills</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-link-ltr">Contact</a>
