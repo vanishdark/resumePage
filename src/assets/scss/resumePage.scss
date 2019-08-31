@@ -21,7 +21,12 @@ $font-size: 20px;
 @font-face {
   font-family: 'Amatic SC';
   src: url('../fonts/AmaticSC-Regular.ttf') format("truetype");
-  font-weight:300;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'BarlowCondensed';
+  src: url('../fonts/BarlowCondensed-Light.ttf') format("truetype");
+  font-weight: 300;
 }
 
 body, html {
@@ -672,20 +677,106 @@ section {
   }
 }
 
-// FOOTER
-.site-footer {
-  padding-top: 90px;
-  padding-bottom: 90px;
+// PROJECTS
+.projects-box {
+  -webkit-box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.footer-title {
-  font-size: 48px;
-  font-weight: 300;
-  margin-bottom: 20px;
-  background-image: -webkit-linear-gradient(left, #F89006 0%, #ff7204 100%);
-  background-image: -o-linear-gradient(left, #F89006 0%, #ff7204 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(#F89006), to(#ff7204));
-  background-image: linear-gradient(to right, #F89006 0%, #ff7204 100%);
-  color: transparent;
-  -webkit-background-clip: text;
+.company-name {
+  color: #777;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.project-session {
+  -webkit-box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  left: 0;
+}
+
+.project-session span {
+  color: #ff7204;
+  left: 15px;
+  -webkit-transform: rotate(-90deg) translateX(-50%);
+  -ms-transform: rotate(-90deg) translateX(-50%);
+  transform: rotate(-90deg) translateX(-50%);
+  -webkit-transform-origin: left top 0;
+  -ms-transform-origin: left top 0;
+  transform-origin: left top 0;
+  width: 115px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  top: 50%;
+}
+
+.block-title:hover {
+  color: #ff7204;
+  text-decoration: none;
+}
+
+.project-info-text {
+  padding-left: 70px;
+}
+
+.block-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #565758;;
+}
+
+@media (max-width: 767px) {
+  .block-title {
+    font-size: 20px;
+  }
+}
+
+.project-link {
+  text-align: end;
+
+  a {
+    color: #ff6a13;
+  }
+
+  // FOOTER
+  .site-footer {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .footer-title {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    background-image: -webkit-linear-gradient(left, #F89006 0%, #ff7204 100%);
+    background-image: -o-linear-gradient(left, #F89006 0%, #ff7204 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(#F89006), to(#ff7204));
+    background-image: linear-gradient(to right, #F89006 0%, #ff7204 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+  }
 }

@@ -7,9 +7,15 @@ import {SkillsComponent} from './pages/skills/skills-home/skills.component';
 import {SharedModule} from '../../shared/shared.module';
 import {SkillsDetailedComponent} from './pages/skills/skills-detailed/skills-detailed.component';
 import {RouterModule} from '@angular/router';
+import {ProfessionalComponent} from './pages/projects/professional/professional.component';
 
 @NgModule({
-  declarations: [HomeComponent, AboutMeComponent, SkillsComponent, SkillsDetailedComponent],
+  declarations: [
+    HomeComponent,
+    AboutMeComponent,
+    SkillsComponent,
+    SkillsDetailedComponent,
+    ProfessionalComponent],
   imports: [
     SharedModule,
     RouterModule.forChild([]),
