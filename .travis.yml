@@ -21,10 +21,10 @@ jobs:
     - stage: lint
       script:
         - ng lint
-    #    - stage: test
-    #     script:
-    #       - npm run test:lib-coverage
-    #       - npm run report-coverage:lib
+    - stage: test
+      script:
+        - npm run test
+        - npm run report-coverage
     - stage: build & publish showcase
       script:
         - npm run build:demo
