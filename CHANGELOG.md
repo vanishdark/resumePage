@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/vanishdark/resumePage/compare/v1.2.0...v1.2.1) (2019-08-31)
+
+
+### Bug Fixes
+
+* **build:** add prod build and fix fonts ([bc2a141](https://github.com/vanishdark/resumePage/commit/bc2a141))
+
 # [1.2.0](https://github.com/vanishdark/resumePage/compare/v1.1.1...v1.2.0) (2019-08-31)
 
 
