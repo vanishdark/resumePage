@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
   public isAboutActive: boolean;
   public isHomeActive: boolean;
   public isSkillActive: boolean;
+  public isProjectsActive: boolean;
 
   constructor(private router: Router, private location: Location) {
   }
@@ -58,7 +59,20 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  activeProjects() {
+    this.isHomeActive = false;
+    this.isAboutActive = false;
+    this.isSkillActive = false;
+    this.isProjectsActive = true;
+    if (this.checkIfHome()) {
+      scroll('projects');
+    } else {
+      this.router.navigate([PublicRoutingNames.NAME_HOME], {fragment: 'projects'});
+    }
+  }
+
   private checkIfHome(): boolean {
     return this.location.path() === this.homePage || this.location.path() === this.homePageRoute;
   }
+
 }
