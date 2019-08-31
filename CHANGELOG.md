@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/vanishdark/resumePage/compare/v1.0.0...v1.1.0) (2019-08-31)
+
+
+### Features
+
+* **home and about:** add home and about page ([027f067](https://github.com/vanishdark/resumePage/commit/027f067))
+
 # 1.0.0 (2019-08-30)
 
 
