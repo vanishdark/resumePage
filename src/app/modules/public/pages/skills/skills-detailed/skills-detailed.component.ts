@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {scrollToTop} from '../../../../../shared/utils/utils.util';
 
 @Component({
   selector: 'app-skills-detailed',
@@ -11,6 +12,7 @@ export class SkillsDetailedComponent implements OnInit {
   }
 
   ngOnInit() {
+    scrollToTop();
   }
 
 }

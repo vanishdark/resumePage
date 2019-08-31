@@ -10,6 +10,5 @@ export class PublicRoutingNames {
   static ROUTE_DEFAULT = '/' + PublicRoutingNames.NAME_BASE;
   static ROUTE_HOME = PublicRoutingNames.ROUTE_DEFAULT + '/' + PublicRoutingNames.NAME_HOME;
   static ROUTE_TOP = PublicRoutingNames.ROUTE_HOME + '#top';
-  static ROUTE_ABOUT = PublicRoutingNames.ROUTE_HOME + '#about';
-  static ROUTE_SKILLS = PublicRoutingNames.ROUTE_DEFAULT + '/' + PublicRoutingNames.NAME_SKILLS;
+  static ROUTE_SKILLS = '/' + PublicRoutingNames.NAME_SKILLS;
 }

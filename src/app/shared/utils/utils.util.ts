@@ -25,3 +25,12 @@ export function isInteger(value: any): value is number {
 export function isDefined(value: any): boolean {
   return value !== undefined && value !== null;
 }
+
+export function scroll(id: string): void {
+  const el = document.getElementById(id);
+  el.scrollIntoView({behavior: 'smooth'});
+}
+
+export function scrollToTop(): void {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}

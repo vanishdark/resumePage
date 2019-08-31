@@ -12,6 +12,10 @@ $dribbble: #ea4c89;
 $pinterest: #cb2027;
 $insta: #bc2a8d;
 $in: rgb(87, 91, 86, 0.35);
+$goTopL: linear-gradient(to top, #F89006 0%, #ff7204 100%);
+$goTopWL: -webkit-linear-gradient(top, #ff7204 0%, #F89006 100%);
+$goTopOL: -o-linear-gradient(top, #ff7204 0%, #F89006 100%);
+$goTopWG: -webkit-gradient(linear, left top, right top, from(#ff7204), to(#F89006));
 $vimeo: #1ab7ea;
 $border-radius: 5px;
 $font-size: 20px;
@@ -27,6 +31,116 @@ body, html {
 
 .page-scroll {
   scroll-behavior: smooth;
+}
+
+// BACK TO TOP
+.go-top-effect {
+  width: 100%;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  padding: 15px;
+  z-index: 99;
+  //padding: 50px 0px 70px 0;
+
+  h2 {
+    color: $basic-light-color;
+    font: {
+      family: 'Amatic SC', serif;
+      weight: 400;
+      size: 15px;
+    }
+    letter-spacing: 3px;
+  }
+
+  &:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  &:nth-child(2n+1) {
+    //background-color: $basic-light-color;
+
+    h2 {
+      color: $basic-dark-color;
+    }
+  }
+
+  .buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  a {
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.go-top-effect {
+  display: flex;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  padding: 15px;
+  z-index: 99;
+
+  a {
+    text-decoration: none !important;
+    color: $basic-light-color !important;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    margin-right: 10px;
+    font-size: $font-size;
+    overflow: hidden;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    padding: 15px;
+    z-index: 99;
+
+    i {
+      position: relative;
+      z-index: 3;
+    }
+
+    &.go-top {
+      background-image: $goTopWL;
+      background-image: $goTopOL;
+      background-image: $goTopWG;
+      background-image: $goTopL;
+      opacity: 0.5;
+    }
+  }
+}
+
+.go-top-effect.egeon {
+
+  a {
+    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s;
+
+    i {
+      transition: transform 0.2s linear 0s;
+    }
+
+    &:hover {
+      transform: rotate(-405deg);
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      opacity: 1;
+
+      i {
+        transform: rotate(405deg);
+      }
+    }
+  }
 }
 
 // UNDER CONSTRUCTION PAGE
@@ -484,7 +598,18 @@ section {
   color: #fff;
 }
 
-// SKILL'S
+// SKILLS
+.detailed {
+  padding-top: 100px;
+  background-color: white;
+  max-width: 1250px;
+  -webkit-box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.15);
+  position: relative;
+  margin: 100px auto 0;
+  z-index: 10;
+}
+
 .bg-grey {
   background-color: #f6f6f7;
 }
