@@ -1,7 +1,6 @@
 @import "bootstrap-variables";
 @import '~bootstrap/scss/bootstrap';
 @import 'external';
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
 
 $basic-dark-color: #212121;
 $basic-light-color: #fff;
@@ -19,7 +18,11 @@ $goTopWG: -webkit-gradient(linear, left top, right top, from(#ff7204), to(#F8900
 $vimeo: #1ab7ea;
 $border-radius: 5px;
 $font-size: 20px;
-
+@font-face {
+  font-family: 'Amatic SC';
+  src: url('../fonts/AmaticSC-Regular.ttf') format("truetype");
+  font-weight:300;
+}
 
 body, html {
   height: 100%;
