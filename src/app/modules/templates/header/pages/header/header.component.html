@@ -1,0 +1,25 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a [routerLink]="[homePage]" class="navbar-brand header-home-link">João Tomaz</a>
+    <div class="collapse navbar-collapse justify-content-stretch" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a [routerLink]="[homePage]" [routerLinkActive]="['active']" class="nav-link nav-link-ltr">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-ltr">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-ltr">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-ltr">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
