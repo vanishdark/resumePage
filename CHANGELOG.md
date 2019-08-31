@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/vanishdark/resumePage/compare/v1.2.1...v1.3.0) (2019-08-31)
+
+
+### Features
+
+* **under construction:** add some new styles to under construction ([3293a79](https://github.com/vanishdark/resumePage/commit/3293a79))
+
 ## [1.2.1](https://github.com/vanishdark/resumePage/compare/v1.2.0...v1.2.1) (2019-08-31)
 
 
