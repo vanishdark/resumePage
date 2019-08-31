@@ -186,20 +186,21 @@ body, html {
 }
 
 .profile-img {
-  background-image: url("../img/profile.jpg");
+  background-image: url("../img/profile-cartoon.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   position: relative;
   display: inline-block;
   border-radius: 50%;
-  border: 1px solid;
+  //border: 1px solid;
+  margin: 10px;
 }
 
 .card.under-construction {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 1);
   -webkit-box-shadow: 0 0 25px -9px rgba(0, 0, 0, 0.52);
   -moz-box-shadow: 0 0 25px -9px rgba(0, 0, 0, 0.52);
   box-shadow: 0 0 25px -9px rgba(0, 0, 0, 0.52);
@@ -242,6 +243,7 @@ body, html {
 }
 
 .typewriter h2 {
+  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto 10px;
@@ -249,11 +251,11 @@ body, html {
 }
 
 @keyframes typing {
-  from {
-    width: 0
+  0% {
+    width: 0;
   }
-  to {
-    width: 100%
+  100% {
+    width: 100%;
   }
 }
 
