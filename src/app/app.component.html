@@ -1,2 +1,8 @@
 <app-header *ngIf="!underConstruction"></app-header>
 <router-outlet></router-outlet>
+<app-footer *ngIf="!underConstruction"></app-footer>
+<div class="go-top-effect egeon" *ngIf="isShowToTop">
+  <div class="buttons">
+    <a class="go-top" (click)="goToTop()" title="Go Top"><i aria-hidden="true" class="fas fa-angle-up"></i></a>
+  </div>
+</div>

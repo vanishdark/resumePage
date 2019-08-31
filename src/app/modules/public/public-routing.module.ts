@@ -5,6 +5,7 @@ import {UnderConstructionPageComponent} from '../templates/under-construction/pa
 import {NotAuthenticatedGuard} from '../../shared/guards/not-authenticated.guard';
 import {environment} from '../../../environments/environment';
 import {HomeComponent} from './pages/home/home.component';
+import {SkillsDetailedComponent} from './pages/skills/skills-detailed/skills-detailed.component';
 
 const routes: Routes = [
   {path: '', redirectTo: PublicRoutingNames.NAME_HOME, pathMatch: 'full'},
@@ -18,6 +19,12 @@ const routes: Routes = [
     path: PublicRoutingNames.NAME_UNDER_CONSTRUCTION,
     component: UnderConstructionPageComponent,
     canActivate: [NotAuthenticatedGuard]
+  },
+  {
+    path: PublicRoutingNames.NAME_SKILLS,
+    component: SkillsDetailedComponent,
+    canActivate: [NotAuthenticatedGuard],
+    data: {underConstruction: environment.underConstruction}
   }
 ];
 
