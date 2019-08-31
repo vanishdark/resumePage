@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/vanishdark/resumePage/compare/v1.1.1...v1.2.0) (2019-08-31)
+
+
+### Bug Fixes
+
+* **semantic :** fix styles ([e55e60f](https://github.com/vanishdark/resumePage/commit/e55e60f))
+
+
+### Features
+
+* **skill detailed:** add skill detailed page base ([cdad9de](https://github.com/vanishdark/resumePage/commit/cdad9de))
+* **skill detailed:** add skill detailed page base ([7d071b9](https://github.com/vanishdark/resumePage/commit/7d071b9))
+* **skills and footer:** add skills home page and footer to the project ([b5b52d8](https://github.com/vanishdark/resumePage/commit/b5b52d8))
+
 ## [1.1.1](https://github.com/vanishdark/resumePage/compare/v1.1.0...v1.1.1) (2019-08-31)
 
 

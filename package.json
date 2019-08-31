@@ -1,12 +1,12 @@
 {
   "name": "resume-page",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "copy:readme": "copyfiles ./README.md ./projects/resume-page",
     "build": "npm run build:demo",
-    "build:demo": "ng build resumePage --base-href='https://vanishdark.github.io/resumePage/'",
+    "build:demo": "ng build resumePage --base-href='https://vanishdark.github.io/resumePage/' --prod",
     "format:check": "prettier --list-different 'projects/**/*.ts'",
     "format:write": "prettier --write 'projects/**/*.ts'",
     "format-package-json": "npm-run-all format-package-json:*",
