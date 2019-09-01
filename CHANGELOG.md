@@ -1,3 +1,17 @@
+# [1.4.0](https://github.com/vanishdark/resumePage/compare/v1.3.0...v1.4.0) (2019-09-01)
+
+
+### Features
+
+* **about:** update about page links, organize package and readme ([a8d6bb1](https://github.com/vanishdark/resumePage/commit/a8d6bb1))
+* **git ignore:** update git ignore ([23b5772](https://github.com/vanishdark/resumePage/commit/23b5772))
+* **git ignore:** update git ignore ([456a341](https://github.com/vanishdark/resumePage/commit/456a341))
+* **git ignore:** update git ignore ([967acc7](https://github.com/vanishdark/resumePage/commit/967acc7))
+* **home:** add linkedin and github links ([3a77a3a](https://github.com/vanishdark/resumePage/commit/3a77a3a))
+* **projects:** add professional projects section ([668646f](https://github.com/vanishdark/resumePage/commit/668646f))
+* **projects:** add projects information, change font and add styles ([ade299b](https://github.com/vanishdark/resumePage/commit/ade299b))
+* **projects:** add projects information, change font and add styles ([acfd7a5](https://github.com/vanishdark/resumePage/commit/acfd7a5))
+
 # [1.3.0](https://github.com/vanishdark/resumePage/compare/v1.2.1...v1.3.0) (2019-08-31)
 
 
