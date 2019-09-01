@@ -18,17 +18,24 @@ $goTopWG: -webkit-gradient(linear, left top, right top, from(#ff7204), to(#F8900
 $vimeo: #1ab7ea;
 $border-radius: 5px;
 $font-size: 20px;
+
 @font-face {
   font-family: 'Amatic SC';
   src: url('../fonts/AmaticSC-Regular.ttf') format("truetype");
-  font-weight:300;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Neucha';
+  src: url('../fonts/Neucha-Regular.ttf') format("truetype");
+  font-weight: 300;
 }
 
 body, html {
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Neucha', cursive;
   background: whitesmoke;
 }
 
@@ -207,7 +214,7 @@ body, html {
 }
 
 .social-github {
-  mask: url("../img/github.svg");
+  mask: url("../img/svg/github.svg");
   height: 30px;
   width: 30px;
   display: inline-block;
@@ -222,7 +229,7 @@ body, html {
 }
 
 .social-linkedin {
-  mask: url("../img/linkedin.svg");
+  mask: url("../img/svg/linkedin.svg");
   height: 30px;
   width: 30px;
   display: inline-block;
@@ -581,6 +588,7 @@ section {
   padding: 7px 17px;
   color: #000;
   border: none;
+  height: 40px;
 }
 
 .btn-theme:hover {
@@ -671,6 +679,100 @@ section {
     .block-title {
       font-size: 18px;
     }
+  }
+}
+
+// PROJECTS
+.projects-box {
+  -webkit-box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.projects-box img {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 20px;
+  top: 20px;
+}
+
+.company-name {
+  color: #777;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.project-session {
+  -webkit-box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  left: 0;
+}
+
+.project-session span {
+  color: #ff7204;
+  left: 15px;
+  -webkit-transform: rotate(-90deg) translateX(-50%);
+  -ms-transform: rotate(-90deg) translateX(-50%);
+  transform: rotate(-90deg) translateX(-50%);
+  -webkit-transform-origin: left top 0;
+  -ms-transform-origin: left top 0;
+  transform-origin: left top 0;
+  width: 130px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  top: 50%;
+}
+
+.block-title:hover {
+  color: #ff7204;
+  text-decoration: none;
+}
+
+.project-info-text {
+  padding-left: 70px;
+}
+
+.block-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #565758;;
+}
+
+@media (max-width: 767px) {
+  .block-title {
+    font-size: 18px;
+  }
+}
+
+.project-link {
+  text-align: end;
+
+  a {
+    color: #ff6a13;
   }
 }
 
