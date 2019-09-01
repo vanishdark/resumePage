@@ -25,6 +25,8 @@ export class HomeComponent implements OnInit {
       scroll('about');
     } else if (this.comingFrom === '#skills') {
       scroll('skills');
+    } else if (this.comingFrom === '#projects') {
+      scroll('projects');
     } else {
       scroll('top');
     }
