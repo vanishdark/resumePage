@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/vanishdark/resumePage/compare/v1.4.1...v1.4.2) (2019-09-01)
+
+
+### Bug Fixes
+
+* **header:** fix showing projects selected when other flag is taken ([3d86248](https://github.com/vanishdark/resumePage/commit/3d86248))
+
 ## [1.4.1](https://github.com/vanishdark/resumePage/compare/v1.4.0...v1.4.1) (2019-09-01)
 
 
