@@ -329,6 +329,33 @@ body, html {
 
 // HOME
 
+.link-twitter {
+  color: rgba(29, 161, 242, 1.00);
+
+  &:hover {
+    text-decoration: none;
+    color: rgba(29, 161, 242, 1.00);
+  }
+}
+
+.link-linkedin {
+  color: #0077B5;
+
+  &:hover {
+    text-decoration: none;
+    color: #0077B5;
+  }
+}
+
+.link-github {
+  color: #000000;
+
+  &:hover {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
 .intro-home {
   background: url("../img/trianglify-lowres.png") no-repeat scroll 0 0;
   background-size: cover;
@@ -530,6 +557,10 @@ section {
   font-size: 24px;
   color: #000;
   line-height: 36px;
+}
+
+.about-me-text b {
+  font-weight: bold;
 }
 
 .personal-info {
