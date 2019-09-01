@@ -30,6 +30,7 @@ export class HeaderComponent implements OnInit {
     this.isAboutActive = true;
     this.isHomeActive = false;
     this.isSkillActive = false;
+    this.isProjectsActive = false;
     if (this.checkIfHome()) {
       scroll('about');
     } else {
@@ -41,6 +42,7 @@ export class HeaderComponent implements OnInit {
     this.isHomeActive = true;
     this.isAboutActive = false;
     this.isSkillActive = false;
+    this.isProjectsActive = false;
     if (this.checkIfHome()) {
       scroll('top');
     } else {
@@ -52,6 +54,7 @@ export class HeaderComponent implements OnInit {
     this.isHomeActive = false;
     this.isAboutActive = false;
     this.isSkillActive = true;
+    this.isProjectsActive = false;
     if (this.checkIfHome()) {
       scroll('skills');
     } else {

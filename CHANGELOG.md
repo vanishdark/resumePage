@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/vanishdark/resumePage/compare/v1.4.0...v1.4.1) (2019-09-01)
+
+
+### Bug Fixes
+
+* **environment prod:** disable underConstruction ([9d4236e](https://github.com/vanishdark/resumePage/commit/9d4236e))
+
 # [1.4.0](https://github.com/vanishdark/resumePage/compare/v1.3.0...v1.4.0) (2019-09-01)
 
 
