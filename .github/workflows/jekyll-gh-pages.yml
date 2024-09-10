@@ -1,39 +1,34 @@
-name: Build and Deploy
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [master]
+    branches: [gh-pages]
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v3   
+
         with:
-          node-version: 10
+          node-version:   
+ '16.x' # Adjust this to your desired Node.js version
+
       - name: Install dependencies
         run: npm install
+
       - name: Build
-        run: npm run build:demo
+        run: npm run build
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    if: ${{ github.ref == 'refs/heads/master' }}
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 10
-      - name: Install dependencies
-        run: npm install
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-github-pages@v1
+        uses:   
+ actions/deploy@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          folder: dist/resumePage
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          folder: dist # Replace with your build output directory
+          repo: ${{ github.repository }}
+          branch: gh-pages
